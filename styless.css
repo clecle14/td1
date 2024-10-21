@@ -1,109 +1,126 @@
-/* Style général */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0b2b35;
-    color: #fff;
-}
 
-/* Styles de l'en-tête */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #111;
-    align-items: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 
-header h1 {
-    font-family: 'Yeseva One', cursive;
-    font-size: 1.5rem;
-}
-
-.social-icons i {
-    margin-left: 15px;
-    font-size: 1.2rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Section d'introduction */
-.intro {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.intro h2 {
-    font-family: 'Yeseva One', cursive;
-    font-size: 2.5rem;
-    line-height: 1.2;
-}
-
-.intro .highlight {
-    color: #00cc99;
-}
-
-.intro p {
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.category-nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    list-style: none;
-    gap: 15px;
-}
-
-.category-nav li {
-    cursor: pointer;
-}
-
-.category-nav .active {
-    color: #00cc99;
-    border-bottom: 2px solid #00cc99;
-}
-
-/* Galerie d'images */
-.gallery {
-    padding: 40px 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
-}
-
-.grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Pied de page */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #111;
-    font-size: 0.9rem;
-}
-
-/* Media Queries pour mobile */
-@media (max-width: 768px) {
-    .intro h2 {
-        font-size: 2rem;
-    }
-    .social-icons i {
-        font-size: 1rem;
-    }
-    .grid {
+@media (min-width: 1025px) {
+    header {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
+header .div1 {
+    color: white;
+    font-size: 25px;
+    font-family: "Yeseva One", sans-serif;
+}
 
-git config --global user.email "hebertcle14@gmail.com"
-git config --global user.name "clecle14"
+
+@media (min-width: 1025px) {
+    header .div2 {
+        text-align: right;
+        margin-top:20px;
+        margin-right: 20px;
+    }
+}  
+
+body {
+    background-color: #041821;
+}
+
+@media (min-width: 1025px) {
+    main .div1 {
+    display: flex;
+    padding-left: 5%;
+    font-family: "Yeseva One", sans-serif;
+    }
+}
+
+#Hello {
+    color: white;
+    font-size: 18px;
+    font-family: "Yeseva One", sans-serif;
+}
+
+@media (min-width: 1025px) {
+    main .div2 {
+    display: flex;
+    padding-left: 5%;
+    }
+}
+
+#prestentation {
+    display: flex;
+    color: white;
+    font-size: 15px;    
+    justify-content: center;
+    font-family: "Monteserat", sans-serif;
+}
+
+@media (min-width: 1025px) {
+    main .div3 {
+    display: flex;
+    padding-left: 36%;
+    flex-wrap: wrap;
+    }
+}
+
+main .div3 {
+    display: flex;
+    padding-left: 36%;
+    flex-wrap: wrap;
+}
+
+.titres {
+    display: flex;
+    color: white;
+    font-size: 15px;
+    gap: 50px;               
+    margin-bottom: 10px;
+    justify-content: center; 
+    font-family: "Montserrat";
+}
+
+.Portrait {
+    background-color: #3d917a;
+    padding: 5px;
+}
+
+@media (min-width: 1025px) {
+    main .div4 {
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+}
+
+.all {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    }
+
+.images img {
+    width: 100%; 
+    height: 100%; 
+}
+
+#vert {
+    color: #1ece9a;
+}
+
+.fa-brands {
+    padding: 10px;
+  }
+
+.footer {
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}

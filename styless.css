@@ -1,0 +1,109 @@
+/* Style général */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b2b35;
+    color: #fff;
+}
+
+/* Styles de l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.5rem;
+}
+
+.social-icons i {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Section d'introduction */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.intro .highlight {
+    color: #00cc99;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.category-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.category-nav li {
+    cursor: pointer;
+}
+
+.category-nav .active {
+    color: #00cc99;
+    border-bottom: 2px solid #00cc99;
+}
+
+/* Galerie d'images */
+.gallery {
+    padding: 40px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    font-size: 0.9rem;
+}
+
+/* Media Queries pour mobile */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 2rem;
+    }
+    .social-icons i {
+        font-size: 1rem;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+git config --global user.email "hebertcle14@gmail.com"
+git config --global user.name "clecle14"

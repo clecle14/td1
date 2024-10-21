@@ -19,13 +19,14 @@ header h1 {
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
 }
-#vert-fond{
+
+#vert-fond {
     background-color: #1bd79e;
     padding: 5px;
 }
 
 .social-icons i {
-    margin:  20px; /* Augmenter la marge horizontale pour espacer davantage les icônes */
+    margin: 20px; /* Augmenter la marge horizontale pour espacer davantage les icônes */
     font-size: 1.2rem;
     color: #ffffff;
     cursor: pointer;
@@ -34,7 +35,7 @@ header h1 {
 /* Section d'introduction */
 .intro {
     text-align: left;  /* Aligner le texte à gauche */
-    padding: 40px 20px;
+    padding: 20px 20px;
 }
 
 .intro h2 {
@@ -74,19 +75,20 @@ header h1 {
 
 /* Galerie d'images */
 .gallery {
-    padding: 40px 40px;
+    padding: 2px 100px;
+    width: 80%;
+    margin: auto; 
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 images par ligne par défaut */
-    gap: 10px;
+    gap: 15px;
 }
 
 .grid img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 /* Pied de page */
@@ -100,7 +102,7 @@ footer {
 /* Media Queries pour mobile */
 @media (max-width: 1200px) {
     .grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 images par ligne pour les écrans moyens */
+        grid-template-columns: repeat(5, 1fr); /* 4 images par ligne pour les écrans moyens (tablettes) */
     }
 }
 
@@ -112,7 +114,7 @@ footer {
         font-size: 1rem;
     }
     .grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 images par ligne pour les petits écrans */
+        grid-template-columns: repeat(3, 1fr); /* 3 images par ligne pour les petits écrans (téléphones) */
     }
     .grid img:nth-child(n + 10) {
         display: none; /* Masquer toutes les images à partir de la dixième */

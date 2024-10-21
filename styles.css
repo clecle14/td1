@@ -1,0 +1,126 @@
+/* Style général */
+body {
+    font-family: 'Montserrat', 'Yeseva One';
+    background-color: #0b2b35;
+    color: #fff;
+}
+
+/* Styles de l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0b2b35;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+#vert-fond{
+    background-color: #1bd79e;
+    padding: 5px;
+}
+
+.social-icons i {
+    margin:  20px; /* Augmenter la marge horizontale pour espacer davantage les icônes */
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Section d'introduction */
+.intro {
+    text-align: left;  /* Aligner le texte à gauche */
+    padding: 40px 20px;
+}
+
+.intro h2 {
+    font-family: 'Yeseva One', cursive;  /* Police Yeseva One pour les titres */
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.highlight {
+    color: #1bd79e; /* Couleur verte pour le texte mis en avant */
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 20px 0;
+    text-align: left;  /* Alignement à gauche */
+}
+
+.category-nav ul {
+    display: flex;
+    justify-content: center; /* Centrer les éléments de navigation */
+    text-align: center; /* Ajusté pour l'alignement au milieu */
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.category-nav li {
+    cursor: pointer;
+}
+
+.category-nav .active {
+    color: #1bd79e;
+    border-bottom: 2px solid #1bd79e;
+}
+
+/* Galerie d'images */
+.gallery {
+    padding: 40px 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images par ligne par défaut */
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0b2b35;
+    font-size: 0.9rem;
+}
+
+/* Media Queries pour mobile */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 images par ligne pour les écrans moyens */
+    }
+}
+
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 2rem;
+    }
+    .social-icons i {
+        font-size: 1rem;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 images par ligne pour les petits écrans */
+    }
+    .grid img:nth-child(n + 10) {
+        display: none; /* Masquer toutes les images à partir de la dixième */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 image par ligne pour les très petits écrans */
+    }
+}

@@ -1,128 +1,198 @@
-/* Style général */
+/* Import des polices Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+/* Style global */
 body {
-    font-family: 'Montserrat', 'Yeseva One';
-    background-color: #0b2b35;
-    color: #fff;
+    background-color: #041821;
+}
+header { 
+    border-bottom: solid 1px  #5f5f5f;
+
+}
+/* Style des sections */
+section {
+    font-family: "Yeseva One", serif;
+    font-size: 50px;
+    margin-top: 3%;
 }
 
-/* Styles de l'en-tête */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #0b2b35;
-    align-items: center;
-}
-
-header h1 {
-    font-family: 'Yeseva One', cursive;
-    font-size: 1.5rem;
+/* Styles pour Titre1 et Titre2 */
+#Titre1 {
     color: rgb(255, 255, 255);
+    width: 80vw;
+    margin: auto;
+    font-weight: bold;
 }
 
-#vert-fond {
-    background-color: #1bd79e;
+#Titre2 {
+    color: rgb(23, 213, 154);
+    width: 80vw;
+    margin: auto;
+    font-weight: bold;
+}
+
+/* Texte descriptif */
+#texte1 {
+    color: grey;
+    font-size: 18px;
+    width: 50%;
+    margin-left: 9%;
+    margin-top: 2%;
+    padding: 4px;
+}
+
+/* Accent dans le nom */
+#points {
+    color: rgb(23, 213, 154);
+}
+
+/* Grille d'images */
+.grid-container {
+    display: grid;
     padding: 5px;
 }
 
-.social-icons i {
-    margin: 20px; /* Augmenter la marge horizontale pour espacer davantage les icônes */
-    font-size: 1.2rem;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-/* Section d'introduction */
-.intro {
-    text-align: left;  /* Aligner le texte à gauche */
-    padding: 20px 20px;
-}
-
-.intro h2 {
-    font-family: 'Yeseva One', cursive;  /* Police Yeseva One pour les titres */
-    font-size: 2.5rem;
-    line-height: 1.2;
-    text-align: left;
-}
-
-.highlight {
-    color: #1bd79e; /* Couleur verte pour le texte mis en avant */
-}
-
-.intro p {
-    max-width: 600px;
-    margin: 20px 0;
-    text-align: left;  /* Alignement à gauche */
-}
-
-.category-nav ul {
+/* Conteneur en-tête */
+.container {
     display: flex;
-    justify-content: center; /* Centrer les éléments de navigation */
-    text-align: center; /* Ajusté pour l'alignement au milieu */
-    padding: 0;
-    list-style: none;
-    gap: 15px;
 }
 
-.category-nav li {
-    cursor: pointer;
+.grid-item {
+    text-align: center;
 }
 
-.category-nav .active {
-    color: #1bd79e;
-    border-bottom: 2px solid #1bd79e;
+/* Propriétés du div d'en-tête */
+#div1 {
+    padding-left: 12px;
+    width: 50%;
 }
 
-/* Galerie d'images */
-.gallery {
-    padding: 2px 100px;
-    width: 80%;
-    margin: auto; 
+header div p {
+    color: rgb(255, 255, 255);
+    font-family: "Yeseva One", sans-serif;
+    font-size: 25px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images par ligne par défaut */
-    gap: 15px;
+#div2 {
+    padding: 8px;
+    text-align: right;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.grid img {
-    width: 100%;
-    height: auto;
+/* Icônes */
+#div2 i {
+    margin-left: 25px;
+    color: rgb(255, 255, 255);
+}
+
+/* Liste des catégories */
+#ul1 {
+    display: flex;
+    margin: 0;
+    padding-top: 5px;
+    justify-content: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Eléments de la liste */
+.li1 {
+    margin-right: 20px;
+    text-align: center;
+    display: block;
+}
+
+/* Accent de l'arrière-plan */
+#vert-fond {
+    background-color: rgb(23, 213, 154);
+    padding: 5px;
 }
 
 /* Pied de page */
 footer {
+    color: white;
     text-align: center;
-    padding: 20px;
-    background-color: #0b2b35;
-    font-size: 0.9rem;
+    padding: 16px;
+    font-size: 20px;
 }
 
-/* Media Queries pour mobile */
-@media (max-width: 1200px) {
-    .grid {
-        grid-template-columns: repeat(5, 1fr); /* 4 images par ligne pour les écrans moyens (tablettes) */
+footer #footer {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Images dans la grille */
+.grid-container img {
+    width: 98%;
+    height: auto;
+    display: block;
+    padding: 5px;
+}
+
+/* Grille pour les grands écrans */
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        width: 80vw;
+        margin: auto;
+    }
+    .grid-parent {
+        padding-top: 30px;
+        margin: 40px auto;
+    }
+    .grid-item,
+    .grid-item img {
+        max-width: 200px;
+        height: 200px;
     }
 }
 
-@media (max-width: 768px) {
-    .intro h2 {
-        font-size: 2rem;
+/* Grille pour les tablettes */
+@media (min-width: 640px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
     }
-    .social-icons i {
-        font-size: 1rem;
+    .grid-parent {
+        padding-top: 30px;
+        margin: 40px auto;
     }
-    .grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 images par ligne pour les petits écrans (téléphones) */
-    }
-    .grid img:nth-child(n + 10) {
-        display: none; /* Masquer toutes les images à partir de la dixième */
+    .grid-item,
+    .grid-item img {
+        max-width: 140px;
+        height: 140px;
     }
 }
 
-@media (max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr; /* 1 image par ligne pour les très petits écrans */
+/* Grille pour les mobiles */
+@media (max-width: 640px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-parent {
+        padding-top: 30px;
+        margin: 40px auto;
+    }
+
+    
+    .grid-item,
+    .grid-item img {
+        max-width: 140px;
+        height: 140px;
+    }
+    .container {
+        display: block;
+    }
+    #div1,
+    #div2 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .grid-container img:nth-child(n + 10) {
+        display: none;
     }
 }

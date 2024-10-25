@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
+    <!-- Encodage des caractères et design adaptable aux différents appareils -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e886228c38.js" crossorigin="anonymous"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Solène Avril - Photographe</title>
-
-    <!-- Lien vers les polices Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Yeseva+One&display=swap"
-        rel="stylesheet">
-
-    <!-- Lien vers Font Awesome pour les icônes sociales -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-    <!-- Lien vers le fichier CSS -->
+    <!-- Lien vers le fichier CSS pour la mise en forme -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Préchargement des polices Google pour améliorer la rapidité -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Importation de la police 'Yeseva One' depuis Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    
+    <!-- Inclusion de Font Awesome pour ajouter des icônes -->
+    <script src="https://kit.fontawesome.com/0a8b8d0ee0.js" crossorigin="anonymous"></script>
+    
+    <!-- Titre du site -->
+    <title>Projet fil rouge</title>
 </head>
 
 <body>
-    <!-- En-tête avec le logo et les icônes sociales -->
+
     <header>
-        <h1>Solène Avril<span class="highlight">.</span>
-        </h1>
-        <div class="div2">
-            <span class="fa-brands fa-instagram fa-xl" style="color: white;"></span>
-            <span class="fa-brands fa-facebook fa-xl" style="color: white;"></span>
-            <span class="fa-brands fa-linkedin fa-xl" style="color: white;"></span>
-            <span class="fa-solid fa-circle-half-stroke fa-xl" style="color: white;"></span>
+        <!-- Zone d'en-tête contenant le nom et des liens vers les réseaux sociaux -->
+        <div class="container">
+            <div id="div1">
+                <p>SOLÈNE AVRIL<span id="points">.</span></p>
+            </div>
+            <div id="div2">
+                <!-- Icônes des réseaux sociaux avec Font Awesome -->
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <i class="fa-solid fa-circle-half-stroke fa-2x"></i>
+            </div>
         </div>
-
+        <!-- Ligne de séparation -->
+        
     </header>
-    <hr>
-    <!-- Section principale avec texte de présentation -->
-    <section class="intro">
-        <h2>Hello,<br>Je suis photographe d'art,<br>
-            <span class="highlight">créative & engagée.</span>
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis augue magna. Fusce fringilla purus et sapien
-            euismod ullamcorper.</p>
-        <nav class="category-nav">
-            <ul>
-                <span>Nature</span>
-                <span id="vert-fond">Portrait</span>
-                <span>Art</span>
-                <span>Urbain</span>
-                <span>Animaux</span>
-            </ul>
-        </nav>
+
+    <section>
+        <!-- Introduction à l'activité de photographe -->
+        <p id="Titre1">Hello,<br> je suis photographe d'art </p>
+        <p id="Titre2">créative & engagée.</p>
     </section>
 
-    <!-- Section de la galerie d'images -->
-    <section class="gallery">
-        <div class="grid">
-            <!-- Générer des images aléatoires avec Lorem Picsum -->
-            <img src="https://picsum.photos/150/150?random=1" alt="Image 1">
-            <img src="https://picsum.photos/150/150?random=2" alt="Image 2">
-            <img src="https://picsum.photos/150/150?random=3" alt="Image 3">
-            <img src="https://picsum.photos/150/150?random=4" alt="Image 4">
-            <img src="https://picsum.photos/150/150?random=5" alt="Image 5">
-            <img src="https://picsum.photos/150/150?random=6" alt="Image 6">
-            <img src="https://picsum.photos/150/150?random=7" alt="Image 7">
-            <img src="https://picsum.photos/150/150?random=8" alt="Image 8">
-            <img src="https://picsum.photos/150/150?random=9" alt="Image 9">
-            <img src="https://picsum.photos/150/150?random=10" alt="Image 10">
-            <img src="https://picsum.photos/150/150?random=11" alt="Image 11">
-            <img src="https://picsum.photos/150/150?random=12" alt="Image 12">
-            <img src="https://picsum.photos/150/150?random=13" alt="Image 13">
-            <img src="https://picsum.photos/150/150?random=14" alt="Image 14">
+    <section id="texte1">
+        <!-- Texte de présentation -->
+        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit. Ut quis augue magna. Fusce fringilla purus et spaien euismod ullacorper. In lorem tellus, sollicitudin in feugiat sed, sodales vel leo.
+        </p>
+    </section>
+
+    <div>
+        <!-- Liste des catégories de photos disponibles -->
+        <ul id="ul1">
+            <li class="li1">NATURE</li>
+            <li class="li1"><span id="vert-fond">PORTRAIT</span></li>
+            <li class="li1">ART</li>
+            <li class="li1">URBAIN</li>
+            <li class="li1">ANIMAUX</li>
+        </ul>
+    </div>
+
+    <div class="grid-parent">
+        <div class="grid-container">
+            <!-- Grille d'images aléatoires générées depuis Picsum -->
+            <img src="https://picsum.photos/id/291/201" alt="image1" />
+            <img src="https://picsum.photos/id/202/202" alt="image2" />
+            <img src="https://picsum.photos/id/203/203" alt="image3" />
+            <img src="https://picsum.photos/id/240/204" alt="image4" />
+            <img src="https://picsum.photos/id/230/205" alt="image5" />
+            <img src="https://picsum.photos/id/204/206" alt="image6" />
+            <img src="https://picsum.photos/id/234/207" alt="image7" />
+            <img src="https://picsum.photos/id/265/208" alt="image8" />
+            <img src="https://picsum.photos/id/278/209" alt="image9" />
+            <img src="https://picsum.photos/id/250/210" alt="image10" />
+            <img src="https://picsum.photos/id/290/211" alt="image11" />
+            <img src="https://picsum.photos/id/200/212" alt="image12" />
+            <img src="https://picsum.photos/id/445/213" alt="image13" />
+            <img src="https://picsum.photos/id/287/214" alt="image14" />
+            <img src="https://picsum.photos/id/270/215" alt="image15" />
         </div>
-    </section>
+    </div>
 
-    <!-- Pied de page -->
     <footer>
-        <p>©2024 Solene Avril<br>Exercice HTML – CSS</p>
+        <!-- Pied de page avec droits d'auteur -->
+        <p>
+          ©2024 SOLENE AVRIL <br/>
+          <span id="footer">Exercices HTML - CSS</span>
+        </p>
     </footer>
+
 </body>
 
 </html>
